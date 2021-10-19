@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %} signup {% endblock %}
+
+{% block content %}
+
+<form action="" method="post" class='row'>
+    <h1>sign-page</h1>
+
+    <div class="row">
+    <div class='form-group d-flex flex-column'>
+        <label for="name"> Name</label>
+        <input type="text" placeholder="Enter-name" name='nm' id="name" >
+        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter-Email" name='email' id='email' >
+        <br>
+        <label for="user">User-Name</label>
+        <input type="text" name='user_name' id="user">
+        <br>
+        <label for="password">PassWord</label>
+        <input type="password" placeholder="Password" name="password" id="password" >
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name='male' id='male' valu='Male'>
+        <label for="female">Female</label>
+        <input type="radio" name='male' id='female' value="Female">
+        
+        <br>
+        <select name="education" id="sel">
+            <option value="radio">Master</option>
+            <option value="radio">Graduation</option>
+            <option value="radio">Diploma</option>
+        </select>
+        <div>
+            <button type='submit' class="btn btn-warning m-3">Submit</button>
+        </div>
+    </div>
+</div>
+    
+
+
+</form>
+{% endblock %}

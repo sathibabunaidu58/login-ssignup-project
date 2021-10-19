@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} login {% endblock %}
+
+{% block content %}
+<div class='container'>
+    <form action="" method='post'>
+    <div class='row'>
+        <div class='d-flex flex-column'>
+            
+            <label for="user">Email-id</label>
+            <input type="email" name="email" id="user" placeholder="Enter-email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name='password' id="password" placeholder="Password">
+            <br>
+            <div class="container">
+                <button class='btn-secondary' value='submit'>Submit</button>
+
+            </div>
+        
+
+        </div>
+    </div>
+</form>
+</div>
+{% endblock %}
